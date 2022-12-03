@@ -419,34 +419,55 @@ function StepThree({ checkstep, setCheckStep }) {
                 "product_url": "https://www.estore.com/products/f2a8d7e34"
             }]
         }
-        //    await fetch(
-        //         `https://api.playground.klarna.com/checkout/v3/orders`,
-        //         {
-        //           method: 'POST',
-        //           headers: {
-        //             'Content-Type': 'application/json',
-        //             Authorization: auth, 
-        //           },
-        //           mode:'no-cors',
-        //           body: JSON.stringify()
-        //         }
-        //       ).then((response)=>{
-        //         if (response.status === 200) {
-        //             console.log(response.data);
-        //         }
-        //       }).catch((error)=>{
-        //         console.log("error:", error);
-        //       });    }
 
+
+        const requestOptions = {
+            method: 'POST',
+            headers: {
+                'Content-Type': "application/json",
+                Authorization: auth,
+            },
+            body: JSON.stringify(payload)
+        };
+
+        // fetch("https://api.playground.klarna.com/checkout/v3/orders", requestOptions)
+        // .then(response => response.json())
+
+        // const instance = axios.create({
+        //     baseURL: "http://www.demoapp.com"
+        //   });
+
+        // axios.defaults.proxy = { host: "http://www.demoapp.com" };
+
+
+        // await axios.post("https://api.playground.klarna.com/checkout/v3/orders", payload, {
+        //     proxy: {
+        //         host: 'http://www.demoapp.com',
+        //         port: 5000
+        //     },
+        //     headers: {
+        //         "Content-Type": "application/json",
+        //         Authorization: auth,
+        //     },
+
+        // });
+
+        // (async () => {
+        //     const fetchHandler = {
+        //       apply(target, thisArg, args) {
+        //         console.log(args);
+        //       },
+        //     };
+
+        //     const proxiedFetch = new Proxy(fetch, fetchHandler);
 
         await axios.post("https://api.playground.klarna.com/checkout/v3/orders", payload, {
             headers: {
-                'Content-Type': "application/json",
-                "Access-Control-Allow-Origin": "*",
-                "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
+                "Content-Type": "application/json",
                 Authorization: auth,
             },
         });
+        //   })();
     }
 
 

@@ -1,6 +1,6 @@
-import StepOne from "./Steps/stepone";
-import StepTwo from "./Steps/steptwo";
-import StepThree from "./Steps/stepthree";
+import StepOne from "./steps/stepone";
+import StepTwo from "./steps/steptwo";
+import StepThree from "./steps/stepthree";
 import { useState } from 'react';
 
 function Information() {
