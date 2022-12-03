@@ -2,7 +2,6 @@
 	"name": "kottfabriken",
 	"version": "0.1.0",
 	"private": true,
-	"proxy": "http://localhost:4000",
 	"dependencies": {
 		"@cocart/cocart-rest-api": "^1.1.0",
 		"@emotion/styled": "^11.10.5",
