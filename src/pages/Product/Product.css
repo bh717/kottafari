@@ -1,0 +1,15 @@
+.product-info-css {
+    align-self: flex-start;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.costum-height {
+    height: 200vh;
+}
+
+.selected {
+    border-color: #76351a;
+    background-color: #76361a53;
+}

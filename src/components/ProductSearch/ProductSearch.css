@@ -1,0 +1,32 @@
+.r-container {
+
+}
+
+.r-item {
+    position: relative;
+}
+
+.r-item img {
+    width: 100%;
+    max-width: 360px;
+}
+
+.r-item p {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+@media (max-width: 1280px) {
+    .r-item p {
+        bottom: 15px;
+        left: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .r-item p {
+        bottom: 5px;
+        left: 5px;
+    }
+}

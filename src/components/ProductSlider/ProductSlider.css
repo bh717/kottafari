@@ -1,0 +1,121 @@
+input[type="range"] {
+    -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 2px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 5px;
+    width: 15%;
+    border-radius: 0%;
+    background: #000;
+    margin-top: -4px;
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+.carousel-container-with-scrollbar {
+    overflow: hidden !important;
+}
+
+.slider-image-item {
+    padding: 0px 35px 0px 35px;
+    /* padding: 0px 20px 0px 0px; */
+}
+
+.product-slider-container {
+    position: relative;
+    margin-left: -35px;
+}
+
+.product-slider-next-btn,
+.product-slider-prev-btn {
+    position: absolute;
+    top: calc(50% - 15px);
+}
+
+.product-slider-prev-btn {
+    left: 4px;
+}
+
+.product-slider-next-btn {
+    right: 4px;
+}
+
+.product-slider-prev-btn::before {
+    content: "\e824";
+    font-size: 20px;
+    color: black;
+    display: block;
+    font-family: revicons;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    font-weight: bold;
+}
+
+.product-slider-next-btn::before {
+    content: "\e825";
+    font-size: 20px;
+    color: black;
+    display: block;
+    font-family: revicons;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    font-weight: bold;
+}
+
+.react-multiple-carousel__arrow {
+    visibility: hidden;
+}
+
+@media (max-width: 1280px) {
+    .slider-image-item {
+        padding: 0px 25px 0px 25px;
+    }
+
+    .product-slider-prev-btn {
+        left: -4px;
+    }
+    
+    .product-slider-next-btn {
+        right: -4px;
+    }
+
+    .product-slider-container {
+        margin-left: -25px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .slider-image-item {
+        padding: 0px 15px 0px 15px;
+    }
+
+    .product-slider-prev-btn {
+        left: -6px;
+    }
+    
+    .product-slider-next-btn {
+        right: -6px;
+    }
+
+    .product-slider-container {
+        margin-left: -15px;
+    }
+}
